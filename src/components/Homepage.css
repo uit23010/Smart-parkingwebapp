@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Page Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background-color: #222;
+  color: white;
+}
+
+/* Top Section (Main Heading & Image) */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Left Section - Text Content */
+.left-section {
+  flex: 1;
+  text-align: left;
+  padding: 50px;
+}
+
+.smart-park {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.quote {
+  font-size: 22px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Right Section - Image & Buttons */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Buttons Above Image */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Image */
+.map-image {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 🔹 Common Section Styling */
+/* How It Works Section */
+.how-it-works {
+  margin-top: 50px;
+  text-align: center;
+  
+  background-color: #1a1a1a;
+  border-bottom: 2px solid #444;
+}
+
+/* Steps Container */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Individual Step - Image Left, Text Right */
+.step {
+  display: flex;
+  align-items: center;
+  background: #333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 1500px;
+  max-width: 90%;
+  text-align: left;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: scale(1.05);
+}
+
+/* Step Image */
+.step img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* Step Text */
+.step p {
+  color: #ddd;
+  font-size: 18px;
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step img {
+    margin-bottom: 10px;
+  }
+}

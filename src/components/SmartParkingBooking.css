@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    background: #3333;
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Centers heading above content */
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+
+}
+
+/* Container for Two Columns */
+.container {
+    display: flex;
+    justify-content: center; /* Centers content */
+    gap: 50px; /* Space between left and right sections */
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.left-column {
+    flex: 1.2; /* Slightly larger than the right side */
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px; /* Keeps space on the left */
+}
+.left-coloumn h2{
+    color: aquamarine;
+}
+
+.right-column {
+    flex: 1,2; /* Ensures enough space for the right side */
+    background: #fff;
+    color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Boxes */
+.right-column input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #fff;
+    color: #222;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Parking Slots Grid */
+.parking-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Exactly 10 boxes per row */
+    gap: 2px;
+    justify-content: center;
+}
+
+/* Slot Styles */
+.slot {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Filled Slots - Red */
+.filled {
+    border: 2px solid darkred;
+}
+
+/* Available Slots - Green */
+.available {
+    border: 2px solid darkgreen;
+}
+.pay-now-btn {
+    background-color: blue; /* Button color */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-weight: bold;
+    
+    width: 20%;  /* Adjust width as needed */
+    display: block; /* Ensures it behaves like a block element */
+    margin-left: auto;
+    margin-right: auto; /* Centers the button */
+    text-align: center;
+    padding: 10px; /* Adjust padding for better appearance */
+}
+
+.pay-now-btn:hover {
+    background-color: blue; /* Darker orange on hover */
+}
+.terms-and-payment {
+margin-top: 5px;
+text-align: center;
+color: #222;
+}
+  
