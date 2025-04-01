@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SignupPage.css";
+import "./Signuppage.css";
 import Dashboard from "./Dashboard";
 
 const SignupPage = ({ onSignup }) => {
